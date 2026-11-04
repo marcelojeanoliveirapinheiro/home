@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Menu */
+nav {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Formação */
+#formacao ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+#formacao li {
+    margin-bottom: 5px;
+}
+
+#formacao h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Conteúdo */
+section {
+    background-color: white;
+    margin: 30px auto;
+    padding: 40px;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+section h1,
+section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+section a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+/* Formação */
+#formacao ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* Projetos */
+.projeto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008cba;
+}
+
+/* Mensagem de sucesso */
+#sucesso {
+    color: green;
+    margin-top: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Celular */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 25px;
+    }
+}
