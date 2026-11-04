@@ -29,10 +29,17 @@
         form.addEventListener("submit", function(event) {
             event.preventDefault();
 
-            sucesso.textContent =
-                "Mensagem enviada com sucesso! Obrigado pelo contato.";
+            // Exibe mensagem de confirmação
+            sucesso.textContent = "Mensagem enviada com sucesso! Obrigado pelo contato.";
+            sucesso.style.display = "block";
 
+            // Limpa os campos
             form.reset();
+
+            // Esconde a mensagem após 5 segundos
+            setTimeout(function() {
+                sucesso.style.display = "none";
+            }, 5000);
         });
     </script>
 
